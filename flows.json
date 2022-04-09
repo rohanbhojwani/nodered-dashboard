@@ -1,0 +1,642 @@
+[
+    {
+        "id": "e7607cfb8d5d788b",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c8b489aca34cbbe3",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#7ad9ff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 50,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 6,
+                "py": 6
+            }
+        }
+    },
+    {
+        "id": "aaf38ba0d742a0da",
+        "type": "ui_tab",
+        "name": "home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "99a37872f882ca9d",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "aaf38ba0d742a0da",
+        "order": 1,
+        "disp": true,
+        "width": 24,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "efc7f66a25b4d631",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost:1883",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1e862e6a4a040e64",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "990c1658eec23ac0",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3f2a667d68fb2cbf",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d6cf75ae14f2e32b",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b09f21ec975de8e7",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9eed67f6a3d9a11f",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c5252ac8bdb7b774",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 9,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "85e3fa56f5a87575",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2eb781511ada3669",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5c67bd732afc2cc0",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9fa364c7638ba9af",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3ed27e52c729df32",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1c4d94b8dd440254",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ea6a44f69b9242da",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 18,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "2dddbf18e6ddd43e",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6f22d5bb72f81a35",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2dd7f0b14e758512",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 23,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "79e63837a72a02d0",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5bfd5d5a151a11b0",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 25,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6b09095a80551f06",
+        "type": "ui_spacer",
+        "z": "e7607cfb8d5d788b",
+        "name": "spacer",
+        "group": "99a37872f882ca9d",
+        "order": 26,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9a0915f6640a81a7",
+        "type": "mqtt in",
+        "z": "e7607cfb8d5d788b",
+        "name": "",
+        "topic": "esp32/dht/humidity",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "efc7f66a25b4d631",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "ce07a7d4cec85f9b"
+            ]
+        ]
+    },
+    {
+        "id": "9a4b891cfc7dae7f",
+        "type": "ui_gauge",
+        "z": "e7607cfb8d5d788b",
+        "name": "",
+        "group": "99a37872f882ca9d",
+        "order": 1,
+        "width": 11,
+        "height": 6,
+        "gtype": "gage",
+        "title": "Temperature ",
+        "label": "F",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 490,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ce07a7d4cec85f9b",
+        "type": "ui_gauge",
+        "z": "e7607cfb8d5d788b",
+        "name": "",
+        "group": "99a37872f882ca9d",
+        "order": 3,
+        "width": 12,
+        "height": 6,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 500,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "82f6776612081b40",
+        "type": "mqtt in",
+        "z": "e7607cfb8d5d788b",
+        "name": "",
+        "topic": "esp32/ACS712/current",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "efc7f66a25b4d631",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 280,
+        "wires": [
+            [
+                "e4922b705919502a"
+            ]
+        ]
+    },
+    {
+        "id": "e4922b705919502a",
+        "type": "ui_gauge",
+        "z": "e7607cfb8d5d788b",
+        "name": "",
+        "group": "99a37872f882ca9d",
+        "order": 10,
+        "width": 11,
+        "height": 6,
+        "gtype": "gage",
+        "title": "current",
+        "label": "ampere",
+        "format": "{{value}}",
+        "min": "-50",
+        "max": "+50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 500,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "0299da41b2c00fda",
+        "type": "ui_gauge",
+        "z": "e7607cfb8d5d788b",
+        "name": "",
+        "group": "99a37872f882ca9d",
+        "order": 21,
+        "width": 12,
+        "height": 6,
+        "gtype": "gage",
+        "title": "oil level",
+        "label": "cm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 480,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "14f08c2385025f56",
+        "type": "mqtt in",
+        "z": "e7607cfb8d5d788b",
+        "name": "",
+        "topic": "esp32/ultrasonic/oil_level",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "efc7f66a25b4d631",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 360,
+        "wires": [
+            [
+                "0299da41b2c00fda"
+            ]
+        ]
+    },
+    {
+        "id": "bc75de1b3031d381",
+        "type": "mqtt in",
+        "z": "e7607cfb8d5d788b",
+        "name": "",
+        "topic": "esp32/dht/temperature",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "efc7f66a25b4d631",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 100,
+        "wires": [
+            [
+                "9a4b891cfc7dae7f"
+            ]
+        ]
+    },
+    {
+        "id": "6eb2508d8e551d41",
+        "type": "mqtt in",
+        "z": "e7607cfb8d5d788b",
+        "name": "",
+        "topic": "esp32/mq2/smoke",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "efc7f66a25b4d631",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 420,
+        "wires": [
+            [
+                "ac6a8a46ef8c1f62"
+            ]
+        ]
+    },
+    {
+        "id": "ac6a8a46ef8c1f62",
+        "type": "ui_gauge",
+        "z": "e7607cfb8d5d788b",
+        "name": "",
+        "group": "99a37872f882ca9d",
+        "order": 19,
+        "width": 11,
+        "height": 6,
+        "gtype": "donut",
+        "title": "smoke",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 470,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "536fbbc464e01071",
+        "type": "mqtt in",
+        "z": "e7607cfb8d5d788b",
+        "name": "",
+        "topic": "esp32/vibration/sw420",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "efc7f66a25b4d631",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 540,
+        "wires": [
+            [
+                "57e1945e9937d42b"
+            ]
+        ]
+    },
+    {
+        "id": "57e1945e9937d42b",
+        "type": "ui_gauge",
+        "z": "e7607cfb8d5d788b",
+        "name": "",
+        "group": "99a37872f882ca9d",
+        "order": 12,
+        "width": 12,
+        "height": 6,
+        "gtype": "gage",
+        "title": "vibration",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 460,
+        "y": 520,
+        "wires": []
+    }
+]
